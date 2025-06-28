@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChefHat, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 interface SplashScreenProps {
   onComplete: () => void;
@@ -77,8 +77,8 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
           showLogo ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-10'
         }`}>
           <div className="relative inline-block">
-            <div className="w-24 h-24 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mb-4 mx-auto shadow-2xl animate-pulse-glow">
-              <ChefHat className="w-12 h-12 text-white" />
+            <div className="w-36 h-36 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-2xl animate-pulse-glow">
+              <img src="/logo.png" alt="Masala Roots Logo" className="w-32 h-56" />
             </div>
             {/* Sparkle Effects */}
             <div className="absolute -top-2 -right-2 animate-bounce">
